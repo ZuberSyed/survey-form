@@ -1,0 +1,145 @@
+ <div id="container">
+ <header id="header">
+<h1 id="title">Restaurant Survey form </h1>
+<p id="description">Please let us know the quality and service provided by us. </p>
+   </header>
+<form id="survey-form">
+  <div class="form-group">
+    <label> Visited Date</label>
+    <br><input
+          type="date" 
+         min="2017-07-10" 
+               class="form-control" required>
+  </div>
+ <div class="form-group">
+   <p>Food Quality</p>  
+  <label>
+   <input 
+          name="quality"
+          type="radio"
+          value="Excellent"
+          class="input-radio"
+   >Excellent
+   </label><br> 
+<label>
+   <input 
+          name="quality"
+          type="radio"
+          value="Good"
+          class="input-radio"
+   >Good
+   </label> <br>
+<label>
+  <input
+         name="quality"
+         type="radio"
+          class="input-radio"
+           value="Average"  
+  >Average
+   </label><br>
+   <label>
+     <input 
+          name="quality"
+            type="radio"
+            class="input-radio"
+            value="Dissatisfied"
+   >Dissatisfied</label>
+  </div>
+   <div class="form-group">
+   <p>Service</p>
+     <label>
+       <input name="Service"
+              type="radio"
+              class="input-radio"
+              value="Excellent"
+              required>Excellent
+       </label><br>
+   <label>
+     <input name="Service"
+            type="radio"
+            class="input-radio"
+            value="Good">Good
+     </label><br>
+        <label>
+     <input name="Service"
+            type="radio"
+            class="input-radio"
+            value="Avearge">Average
+     </label><br>
+     <label>
+     <input name="Service"
+            type="radio"
+            class="input-radio"
+        value="Dissatisfied">Dissatisfied
+     </label>
+   </div>
+  <div class="form-group" id="dropdown">
+    <p>Your Favorite Food in restaurant?</p>
+      <select class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="Biryani"
+                >Biryani</option>
+        <option value="Pizza">Roti with Tandoori Chicken</option>
+        <option value="Burger with french fries">Pizza</option> 
+        <option value="pastry with ice-cream">Burger with French fries</option>
+        <option value="Milkshake with chocolate">Pastries and Milkshakes </option>
+      </select>
+  </div>
+  
+  <div class="form-group">
+    <p> What Would you like to improved?
+    </p>
+    <input type="checkbox" value="quality of food" required>Quality of Food<br>
+  <input type="checkbox" value="Service">Service<br>
+    <input type="checkbox" value="Cleanliness">Cleanliness<br>
+    <input type="checkbox" value="">Dining room(s), Decor, lightning 
+  </div>
+   <h2>Personal Portfolio</h2>
+  <p>Your Information is valuable to us. It will not reveal out </p>
+   <div class="form-group">
+    <label id="name-label" for="name">
+      Name</label>
+  <input 
+         name="name" 
+         type="text" 
+         id="name"
+         class="form-control"
+         placeholder="Enter your Full Name" 
+         required 
+         >
+  </div>
+  <div class="form-group"> 
+    <label id="email-label" for="email">Email</label>
+  <input 
+         name="email" 
+         type="email" 
+         placeholder="Enter your email" id="email"
+          class="form-control"
+          required        ></div>
+
+ <div class="form-group">
+   <label id="number-label" for="Age">Age</label>
+   <input 
+          class="form-control"
+          name="Age" 
+          type="number" 
+           min="10" max="91"
+          id="number" 
+          placeholder="Enter your Age"   
+          required >
+</div>
+   <div class="form-group">
+     <p>Is there any scope for Improvements? Share your points.</p>
+     <textarea type="text" rows="6" cols="35">
+       </textarea>
+   </div>
+   <div class="form-group">
+   <button
+           type="submit" 
+           value="submit"  id="submit"
+           class="submit-button">
+           Submit your Feedback
+   </button>
+   </div>
+   </form>
+  </div>
